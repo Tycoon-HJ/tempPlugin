@@ -33,7 +33,6 @@ public class Dialog extends DialogWrapper {
     @Override
     protected @Nullable JComponent createCenterPanel() {
 
-
         // 从网站上动态获取数据，使得每次更新都会加载新的数据
         RestTemplate restTemplate = new RestTemplate();
         MessageInDto messageInDto = new MessageInDto();
@@ -68,9 +67,10 @@ public class Dialog extends DialogWrapper {
         JButton jButton = new JButton();
         jButton.setText("没事可以点一下这里");
 
-        Dialog dialog = new Dialog();
+
         jButton.addActionListener(actionEven -> {
-            if (dialog.showAndGet()) {
+            // fix 修改死循环导致内存溢出的问题
+            if (new Dialog().showAndGet()) {
                 logger.info("点击就会出现问题的");
             } else {
                 logger.error("上面没走");
