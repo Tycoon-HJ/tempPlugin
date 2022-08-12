@@ -1,6 +1,7 @@
 package com.example.tempplugin.util;
 
 /**
+ * 存放一些静态变量
  * @author Mr.YinHaijun
  */
 public class StaticString {

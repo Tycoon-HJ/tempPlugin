@@ -9,14 +9,15 @@ import com.intellij.ui.content.ContentFactory;
 import org.jetbrains.annotations.NotNull;
 
 /**
+ * 这里是为了新增一个窗口工具
  * @author Mr.YinHaijun
  */
 public class TempPluginWindowsFactory implements ToolWindowFactory {
     @Override
     public void createToolWindowContent(@NotNull Project project, @NotNull ToolWindow toolWindow) {
-        TempPluginUI tempPluginUI = new TempPluginUI(project, toolWindow);
+        TempPluginUI tempPluginUi = new TempPluginUI(project, toolWindow);
         ContentFactory contentFactory = ContentFactory.getInstance();
-        Content content = contentFactory.createContent(tempPluginUI.getPanel1(), "", false);
+        Content content = contentFactory.createContent(tempPluginUi.getPanel1(), "", false);
         toolWindow.getContentManager().addContent(content);
     }
 }

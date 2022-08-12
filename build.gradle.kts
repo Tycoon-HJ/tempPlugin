@@ -18,6 +18,8 @@ dependencies {
     implementation("org.springframework:spring-web:5.3.22")
     implementation("org.springframework:spring-core:5.3.22")
     implementation("org.springframework:spring-beans:5.3.22")
+    // https://mvnrepository.com/artifact/javazoom/jlayer
+    implementation("javazoom:jlayer:1.0.1")
 
 
 

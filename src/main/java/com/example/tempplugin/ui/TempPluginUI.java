@@ -5,6 +5,9 @@ import com.intellij.openapi.wm.ToolWindow;
 
 import javax.swing.*;
 
+/**
+ * @author Mr.YinHaijun
+ */
 public class TempPluginUI {
     private JPanel panel1;
     private JButton button2;
