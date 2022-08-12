@@ -40,3 +40,7 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### 排除隐藏文件夹 ###
+.idea
+.gradle
