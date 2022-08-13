@@ -23,7 +23,7 @@ public class PlayMusic {
             Player player = new Player(stream);
             player.play();
         } catch (Exception e) {
-            logger.info("报错了，{}", e);
+            logger.info("报错了，大概率是文件没找到{}", e);
         }
     }
 }

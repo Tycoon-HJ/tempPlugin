@@ -25,27 +25,17 @@
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
+<!--        在打开项目前启动一次-->
         <postStartupActivity implementation="com.example.tempplugin.config.ProjectStartConfig"/>
+<!--        全局监听编辑器-->
+        <editorFactoryDocumentListener implementation="com.example.tempplugin.config.EditorListenerConfig" />
         <toolWindow factoryClass="com.example.tempplugin.factory.TempPluginWindowsFactory" id="tempPluginWindowsFactory" anchor="right" icon="AllIcons.Actions.Colors" />
     </extensions>
     <actions>
         <action id="tempPlugin" class="com.example.tempplugin.TempPlugin" text="点击这里"
                 description="点击这里">
-            <add-to-group group-id="ToolsMenu" anchor="first"/>
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
         </action>
     </actions>
-
-
-<!--    这个是之前项目启动时候的配置-->
-<!--    <application-components>-->
-<!--        <component>-->
-<!--            <implementation-class>com.example.tempplugin.config.ProjectStartConfig</implementation-class>-->
-<!--        </component>-->
-<!--    </application-components>-->
-
-<!--    <applicationListeners>-->
-<!--        <listener class="com.example.tempplugin.config.ProjectStartConfig"-->
-<!--                  topic="com.intellij.ide.AppLifecycleListener"/>-->
-<!--    </applicationListeners>-->
 
 </idea-plugin>

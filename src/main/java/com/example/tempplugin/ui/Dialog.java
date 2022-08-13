@@ -3,6 +3,7 @@ package com.example.tempplugin.ui;
 
 import com.example.tempplugin.dto.DataInDto;
 import com.example.tempplugin.dto.MessageInDto;
+import com.example.tempplugin.util.StaticString;
 import com.intellij.openapi.diagnostic.Logger;
 import com.intellij.openapi.ui.DialogWrapper;
 import org.jetbrains.annotations.Nullable;
@@ -36,7 +37,7 @@ public class Dialog extends DialogWrapper {
         // 从网站上动态获取数据，使得每次更新都会加载新的数据
         RestTemplate restTemplate = new RestTemplate();
         MessageInDto messageInDto = new MessageInDto();
-        ResponseEntity<MessageInDto> forEntity = restTemplate.getForEntity("https://api.nextrt.com/V1/Dutang", MessageInDto.class);
+        ResponseEntity<MessageInDto> forEntity = restTemplate.getForEntity(StaticString.POISON_CHICKEN_SOUP_URL, MessageInDto.class);
         if (ObjectUtils.isEmpty(forEntity)) {
             return null;
         }

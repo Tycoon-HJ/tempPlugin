@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64d8d26b-8ce0-4d27-8a75-144509492f6a" name="变更" comment="add:新增在编写代码时播放音效，水声&#10;add:新增注释便于理解&#10;fix：删除无用代码模块">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" beforeDir="false" />
+    <list default="true" id="64d8d26b-8ce0-4d27-8a75-144509492f6a" name="变更" comment="add:排除.idea .gradle模块">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/config/EditorListenerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/config/ThreadPoolConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/TempPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/TempPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/config/ProjectStartConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/config/ProjectStartConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/ui/Dialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/ui/Dialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/util/PlayMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/util/PlayMusic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/util/StaticString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/util/StaticString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/1.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/water.mp3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,13 +96,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "false",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/mr.ahai/IdeaProjects/tempPlugin/tempPlugin/src/main/resources/static",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "项目",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.33793104",
-    "settings.editor.selected.configurable": "project.propDebugger",
+    "settings.editor.selected.configurable": "keyPromoterConfiguration",
     "spring.configuration.checksum": "9b7604cb5d0ca7625491cd571b14aa54"
   }
 }]]></component>
@@ -194,6 +202,8 @@
       <workItem from="1659593876051" duration="36887000" />
       <workItem from="1660200873041" duration="721000" />
       <workItem from="1660201887538" duration="1970000" />
+      <workItem from="1660298127204" duration="1062000" />
+      <workItem from="1660363808802" duration="9187000" />
     </task>
     <task id="LOCAL-00001" summary="add:新增在编写代码时播放音效，水声&#10;add:新增注释便于理解&#10;fix：删除无用代码模块">
       <created>1660278578046</created>
@@ -202,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660278578046</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add:排除.idea .gradle模块">
+      <created>1660279134958</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660279134958</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +239,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix:修复死循环导致内存溢出的问题" />
     <MESSAGE value="add:新增在编写代码时播放音效，水声&#10;add:新增注释便于理解&#10;fix：删除无用代码模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:新增在编写代码时播放音效，水声&#10;add:新增注释便于理解&#10;fix：删除无用代码模块" />
+    <MESSAGE value="add:排除.idea .gradle模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:排除.idea .gradle模块" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
