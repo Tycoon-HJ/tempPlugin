@@ -53,16 +53,16 @@ public class Dialog extends DialogWrapper {
         }
 
 
-        //创建一个画板
+        // 创建一个画板
         JPanel dialogPanel = new JPanel(new BorderLayout());
 
         // 这个里面存放要显示的内容
         JLabel label = new JLabel(messageInDto.getData().get(0).getContent());
 
-        //设置窗口的大小
+        // 设置窗口的大小
         label.setPreferredSize(new Dimension(600, 400));
 
-        //将label放在这个画板上
+        // 将label放在这个画板上
         dialogPanel.add(label, BorderLayout.SOUTH);
 
         JButton jButton = new JButton();

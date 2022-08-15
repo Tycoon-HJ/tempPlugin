@@ -30,6 +30,9 @@
 <!--        全局监听编辑器-->
         <editorFactoryDocumentListener implementation="com.example.tempplugin.config.EditorListenerConfig" />
         <toolWindow factoryClass="com.example.tempplugin.factory.TempPluginWindowsFactory" id="tempPluginWindowsFactory" anchor="right" icon="AllIcons.Actions.Colors" />
+
+        <applicationConfigurable id="tempPluginId" displayName="Play Music Controller"
+                                 instance="com.example.tempplugin.ui.MusicControllerUi" groupId="tools"/>
     </extensions>
     <actions>
         <action id="tempPlugin" class="com.example.tempplugin.TempPlugin" text="点击这里"

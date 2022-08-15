@@ -4,18 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64d8d26b-8ce0-4d27-8a75-144509492f6a" name="变更" comment="add:排除.idea .gradle模块">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/config/EditorListenerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/config/ThreadPoolConfig.java" afterDir="false" />
+    <list default="true" id="64d8d26b-8ce0-4d27-8a75-144509492f6a" name="变更" comment="add:新增敲击键盘可播放音乐&#10;add:添加线程池，优化体验&#10;add:去除无用代码，添加注释">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/ui/MusicControllerUi.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/ui/MusicControllerUi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/b/fbe448ebfc3eb2d4e308f6b8b043666f5b57235e" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/TempPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/TempPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/config/EditorListenerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/config/EditorListenerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/config/ProjectStartConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/config/ProjectStartConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/ui/Dialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/ui/Dialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/util/PlayMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/util/PlayMusic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/util/EditTextUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/util/EditTextUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/util/StaticString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tempplugin/util/StaticString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/1.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/water.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/water.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/water.mp3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +45,23 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tempPlugin" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tempPlugin" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tempPlugin" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -84,29 +103,33 @@
     </option>
   </component>
   <component name="ProjectId" id="2Cpym0dE0XoCKDKxKkb6zLYB76V" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="false" />
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "false",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/mr.ahai/IdeaProjects/tempPlugin/tempPlugin/src/main/resources/static",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "项目",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.33793104",
-    "settings.editor.selected.configurable": "keyPromoterConfiguration",
-    "spring.configuration.checksum": "9b7604cb5d0ca7625491cd571b14aa54"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mr.ahai/IdeaProjects/tempPlugin/tempPlugin/src/main/resources/static&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.33793104&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;9b7604cb5d0ca7625491cd571b14aa54&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
@@ -125,6 +148,27 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="tempPlugin [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="tempPlugin [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -182,6 +226,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.tempPlugin [runIde]" />
+        <item itemvalue="Gradle.tempPlugin [build]" />
         <item itemvalue="Gradle.tempPlugin [clean]" />
         <item itemvalue="应用程序.TestMyDemo" />
       </list>
@@ -203,7 +248,9 @@
       <workItem from="1660200873041" duration="721000" />
       <workItem from="1660201887538" duration="1970000" />
       <workItem from="1660298127204" duration="1062000" />
-      <workItem from="1660363808802" duration="9187000" />
+      <workItem from="1660363808802" duration="19749000" />
+      <workItem from="1660571804541" duration="1748000" />
+      <workItem from="1660573666780" duration="1697000" />
     </task>
     <task id="LOCAL-00001" summary="add:新增在编写代码时播放音效，水声&#10;add:新增注释便于理解&#10;fix：删除无用代码模块">
       <created>1660278578046</created>
@@ -219,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660279134958</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add:新增敲击键盘可播放音乐&#10;add:添加线程池，优化体验&#10;add:去除无用代码，添加注释">
+      <created>1660401938005</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660401938005</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,10 +291,12 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="fix:修复死循环导致内存溢出的问题" />
     <MESSAGE value="add:新增在编写代码时播放音效，水声&#10;add:新增注释便于理解&#10;fix：删除无用代码模块" />
     <MESSAGE value="add:排除.idea .gradle模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:排除.idea .gradle模块" />
+    <MESSAGE value="add:新增敲击键盘可播放音乐&#10;add:添加线程池，优化体验&#10;add:去除无用代码，添加注释" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:新增敲击键盘可播放音乐&#10;add:添加线程池，优化体验&#10;add:去除无用代码，添加注释" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -43,4 +43,4 @@ bin/
 
 ### 排除隐藏文件夹 ###
 .idea
-.gradle
+/.idea/

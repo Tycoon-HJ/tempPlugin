@@ -17,6 +17,6 @@ public class ProjectStartConfig implements StartupActivity {
     public void runActivity(@NotNull Project project) {
 
         // 当项目打开的时候会自动弹出一个毒鸡汤的窗口
-        //new Dialog().show();
+        // new Dialog().show();
     }
 }

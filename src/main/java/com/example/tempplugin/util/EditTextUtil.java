@@ -35,10 +35,10 @@ public class EditTextUtil {
     public static String getSysClipboardText() {
         String ret = "";
         Clipboard sysClip = Toolkit.getDefaultToolkit().getSystemClipboard();
-        //获取剪切板中的内容
+        // 获取剪切板中的内容
         Transferable contents = sysClip.getContents(null);
         if (contents != null) {
-            //检查是否是文本类型
+            // 检查是否是文本类型
             if (!contents.isDataFlavorSupported(DataFlavor.stringFlavor)) {
                 return ret;
             }

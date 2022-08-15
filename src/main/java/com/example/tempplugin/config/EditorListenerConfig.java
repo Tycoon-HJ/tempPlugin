@@ -23,8 +23,10 @@ public class EditorListenerConfig implements EditorEventListener {
      */
     @Override
     public void beforeDocumentChange(@NotNull DocumentEvent event) {
-        threadPoolConfig.runSomething(() -> PlayMusic.playMusic(StaticString.LOCAL_MUSIC_PATH));
-        //打包插件之前采用相对路径，才可以访问静态资源
-        //threadPoolConfig.runSomething(() -> PlayMusic.playMusic(StaticString.ONLINE_MUSIC_PATH));
+        if (StaticString.IS_START_PLAY_MUSIC){
+            threadPoolConfig.runSomething(() -> PlayMusic.playMusic(StaticString.LOCAL_MUSIC_PATH));
+        }
+        // 打包插件之前采用相对路径，才可以访问静态资源
+        // threadPoolConfig.runSomething(() -> PlayMusic.playMusic(StaticString.ONLINE_MUSIC_PATH));
     }
 }
