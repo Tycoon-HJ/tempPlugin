@@ -24,7 +24,7 @@ public class StaticString {
     /**
      * 毒鸡汤的在线地址
      */
-    public static final String POISON_CHICKEN_SOUP_URL = "https:// api.nextrt.com/V1/Dutang";
+    public static final String POISON_CHICKEN_SOUP_URL = "https://api.nextrt.com/V1/Dutang";
 
     /**
      * 测试阶段本地音乐播放路径( ps: 仅支持mp3格式，wav不支持！！！！，可通过更改第三方jar包扩展此功能)

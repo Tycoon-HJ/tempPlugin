@@ -29,8 +29,10 @@
         <postStartupActivity implementation="com.example.tempplugin.config.ProjectStartConfig"/>
 <!--        全局监听编辑器-->
         <editorFactoryDocumentListener implementation="com.example.tempplugin.config.EditorListenerConfig" />
-        <toolWindow factoryClass="com.example.tempplugin.factory.TempPluginWindowsFactory" id="tempPluginWindowsFactory" anchor="right" icon="AllIcons.Actions.Colors" />
-
+<!--        创建一个tool窗口-->
+        <toolWindow factoryClass="com.example.tempplugin.factory.TempPluginWindowsFactory"
+                    id="tempPluginWindowsFactory" anchor="right" icon="AllIcons.Actions.Colors" />
+<!--在设置里配置插件的功能-->
         <applicationConfigurable id="tempPluginId" displayName="Play Music Controller"
                                  instance="com.example.tempplugin.ui.MusicControllerUi" groupId="tools"/>
     </extensions>
